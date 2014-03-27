@@ -1,0 +1,11 @@
+<div class="container">
+  <div id="food-item-form">
+    <form action="/bringSomething!" method="post">
+    What are you going to bring? Pick something that's not on the list below. <input name="description">
+    <input type="submit">
+    </form>
+  </div>
+  <% @fooditems.each do |item| %>
+    <p><%= item.guest_name %> is bringing <%= item.description %></p>
+  <% end %>
+</div>
