@@ -13,6 +13,7 @@ gem 'thin'
 gem 'activesupport'
 gem 'activerecord'
 gem 'pry'
+gem 'pony'
 
 gem 'rake'
 gem 'bcrypt-ruby'
