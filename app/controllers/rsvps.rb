@@ -10,6 +10,7 @@ end
 
 post '/rsvp' do
   attendant = Attendant.create!(name: params[:name])
+  Pony.mail(:to => 'devinwieland@gmail.com', :from => 'me@example.com', :subject => 'fall party guest rsvp', :body => "#{attendant.name}")
   session[:name] = attendant.name
   redirect to "/rsvp"
 end
