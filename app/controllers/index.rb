@@ -1,5 +1,5 @@
 get '/' do
-  authorized?
+  # authorized?
   # Look in app/views/index.erb
   erb :index
 end
