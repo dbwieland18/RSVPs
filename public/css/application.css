@@ -1,9 +1,27 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("http://31.media.tumblr.com/44445713d1ea561f333795487720afc7/tumblr_ms9mywAOPn1st5lhmo1_1280.jpg");
+  background-size: cover;
+}
+
 .container {
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  /*border: 1px dotted black;*/
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  border-radius: 20px;
+  height: 500px;
+  margin-top: 0;
 }
+
+p {
+  margin-top: 0;
+}
+
 th {
   text-align: left;
 }
