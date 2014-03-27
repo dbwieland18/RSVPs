@@ -13,3 +13,13 @@ post '/rsvp' do
   session[:name] = attendant.name
   redirect to "/rsvp"
 end
+
+get '/bringSomething!' do
+  @fooditems = FoodItem.all
+  erb :"food/new"
+end
+
+post '/bringSomething!' do
+  @item = FoodItem.create!(guest_name: session[:name], description: params[:description])
+  redirect to '/bringSomething!'
+end
