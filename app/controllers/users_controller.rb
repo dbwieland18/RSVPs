@@ -11,3 +11,4 @@ post '/users/new' do
     erb :"/users/new"
   end
 end
+
