@@ -9,7 +9,7 @@ $(document).ready(function() {
       type: "post",
       data: name,
       success: function() {
-        $("#rsvp-form").html("<h2>thanks!</h2><br><br><a style='padding-right: 20px;' href='/rsvp'>See who else is coming.</a>   <a href='/bringSomething!'>bring something!</a>")
+        $("#rsvp-form").html("<h2>thanks!</h2><a style='padding-right: 20px;' href='/rsvp'>See who else is coming.</a>   <a href='/bringSomething!'>bring something!</a>")
       }
     });
 	});
@@ -23,8 +23,8 @@ $(document).ready(function() {
       type: "post",
       data: item,
       success: function(response) {
-        $("#food-item-form").html("<h1>Perfect!</h1>")
-        $("#food-item-list").prepend("<p>" + response.guest_name + " ...bringing " + response.description + "</p>")
+        $("#food-item-form").html("<h1>Perfect!</h1><br>")
+        $("#food-item-list").prepend(response.guest_name + " . . . bringing " + response.description + "<br>")
       }
     })
   });
