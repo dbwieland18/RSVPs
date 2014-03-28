@@ -1,11 +1,13 @@
 <div class="container">
   <div id="food-item-form">
     <form action="/bringSomething!" method="post">
-    What are you going to bring? Pick something that's not on the list below. <input id="inputs" name="description">
-    <input type="submit">
+    <p>What are you going to bring? Pick something that's not on the list below.</p>
+    <input id="inputs" name="description">
+    <input id="button" type="submit">
     </form>
+    <br>
   </div>
   <% @fooditems.each do |item| %>
-    <p><%= item.guest_name %> is bringing <%= item.description %></p>
+    <p><b><%= item.guest_name %></b> is bringing <%= item.description %></p>
   <% end %>
 </div>
