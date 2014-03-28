@@ -22,5 +22,7 @@ end
 
 post '/bringSomething!' do
   @item = FoodItem.create!(guest_name: session[:name], description: params[:description])
-  redirect to '/bringSomething!'
+  # redirect to '/bringSomething!'
+  content_type :json
+  { :guest_name => "#{@item.guest_name}", :description => "#{@item.description}"}.to_json
 end

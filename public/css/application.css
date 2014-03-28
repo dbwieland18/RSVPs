@@ -10,6 +10,16 @@ body {
   font-size: 18px;
 }
 
+h1, h2 {
+  font-size: 95px;
+}
+
+h1, h2 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -27,7 +37,12 @@ button:focus {
 }
 
 a {
-  text-decoration: none;
+  color: white;
+}
+
+#guest-list, #food-item-list {
+  overflow: scroll;
+  max-height: 500px;
 }
 
 .container {
@@ -56,7 +71,7 @@ li:last-child {
 }
 
 p {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
