@@ -3,11 +3,21 @@ html {
 }
 
 body {
-  background-image: url("http://31.media.tumblr.com/44445713d1ea561f333795487720afc7/tumblr_ms9mywAOPn1st5lhmo1_1280.jpg");
+  background-image: url("http://25.media.tumblr.com/1adc4029ef3a31124f222add70fa3553/tumblr_n2k1499dIp1st5lhmo1_1280.jpg");
   background-size: cover;
   color: white;
   font-family: 'The Girl Next Door', cursive;
   font-size: 18px;
+}
+
+#footer {
+  /*display: inline;*/
+  /*text-align: center;*/
+  position: fixed;
+  bottom: 0;
+  /*display: block;*/
+  left: 40%;
+  /*margin: 0 auto;*/
 }
 
 h1, h2 {
